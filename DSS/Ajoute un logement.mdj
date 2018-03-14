@@ -75,9 +75,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 78,
+											"left": 78.75094604492188,
 											"top": 10,
-											"width": 111,
+											"width": 110.31689453125,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -103,7 +103,7 @@
 											"containerExtending": false,
 											"left": 10,
 											"top": 10,
-											"width": 63,
+											"width": 63.750946044921875,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -1584,9 +1584,9 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 298.5,
+											"left": 298.2310485839844,
 											"top": 146,
-											"width": 83,
+											"width": 83.53790283203125,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -1612,7 +1612,7 @@
 											"containerExtending": false,
 											"left": 93,
 											"top": 125,
-											"width": 17,
+											"width": 17.431991577148438,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -1852,6 +1852,7 @@
 					"visibility": "public",
 					"isStatic": false,
 					"isLeaf": false,
+					"type": "",
 					"isReadOnly": false,
 					"isOrdered": false,
 					"isUnique": false,
@@ -1869,6 +1870,7 @@
 					"visibility": "public",
 					"isStatic": false,
 					"isLeaf": false,
+					"type": "",
 					"isReadOnly": false,
 					"isOrdered": false,
 					"isUnique": false,
@@ -1880,6 +1882,27 @@
 			"isAbstract": false,
 			"isFinalSpecialization": false,
 			"isLeaf": false
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFiENrgfu7JGxs=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model1",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFiENrgfu7K5nc=",
+					"_parent": {
+						"$ref": "AAAAAAFiENrgfu7JGxs="
+					},
+					"name": "ClassDiagram1",
+					"visible": true,
+					"defaultDiagram": false
+				}
+			],
+			"visibility": "public"
 		}
 	]
 }

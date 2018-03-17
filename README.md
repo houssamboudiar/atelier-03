@@ -12,10 +12,4 @@
 
 ## To do:
     
-<<<<<<< HEAD
     - nouveau DCP 
-    
-=======
-    - neaveau DCP
->>>>>>> 69a15b665d99003ef8c45ff249c1ed07b4d40ef1
-

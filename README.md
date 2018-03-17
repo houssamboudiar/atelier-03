@@ -13,6 +13,4 @@
 ## To do:
     
     - neaveau DCP
-    - neaveau DC
-    - neaveau DUC
-    - neaveau DSD
+

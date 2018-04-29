@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+       
+        <div class="wrapper container-fluid">
+            
+            <header class="row" style=" background-image: url('./assets/images/bg0.jpg')">
+                <div class="bg col-12"></div>
+                <div class="overlay col-12"></div>
+                <div class="nav col-12 row">
+                    <div class="logo col-2">
+                        <img class="logo_img" src="assets/images/logo.svg" alt="logo">
+                    </div>
+                    <nav class="navbar col-8">
+                        <ul>
+                            <li><a href="#">Search</a><span class="underline"></span></li>
+                            <li><a href="#">Agents</a><span class="underline"></span></li>
+                            <li><a href="#">Contact</a><span class="underline"></span></li>
+                            <span class="pipe"></span>
+                            <li><a href="#"> <span class="fa fa-phone"></span>Call Us</a><span class="underline"></span></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 row">
+                    <div class="search col-8">
+                        <p class="title"> <strong>Login Area</strong>  </p>
+                    </div>
+
+                <div class="row col-12 pagecontent">
+                    <div class="title"><br><br></div>
+                </div> 
+
+                <div class="row col-12 arrow-div">
+                        <a href="#login"><div class="fa fa-angle-down"></div></a>
+                </div>
+            </header>
+        </div> 
+        <div style="background: #f5f5f5; ">
+                <div class="container">
+                        <div class="row col-12 cont" >
+                                <div class="context" >
+                                        <ul>
+                                            <li><a class="menu-1" href="#">Home</a><span class="fade"></span></li>
+                                            <span class="fa fa-angle-right"></span>
+                                            <li><a class="menu-2" href="#">Login Area</a><span class="fade"></span></li>
+                                        </ul>
+                                </div>
+                        </div> 
+                </div>
+        </div>
+
+        <div class="home-background" id="login">
+                <div class="home-layout">
+                <div class="container home-container" >
+                
+                        <div class="row col-12 page" >
+                                <ul class="left-form col-6">
+                                        <div class="form-text">
+                                            <h2 style="margin-left:11px" >Sign-up</h2>  
+                                        </div>
+                                        <li>
+                                            <label for="username">Your Name</label>
+                                            <input type="text"   name="username" required/>
+                                            <div class="clear"> </div>
+                                        </li>  
+                                        <li>
+                                            <label for="email">Email</label>
+                                            <input type="text"   name="email"  required/>
+                                            <div class="clear"> </div>
+                                        </li> 
+                                        <li>
+                                            <label for="password">Password</label>
+                                            <input type="password"   name="password" required/>
+                                            <div class="clear"> </div>
+                                        </li> 
+                                        <li>
+                                            <label for="confirmpass">Confirm Password</label>
+                                            <input type="password"   name="confirmpass" required/>
+                                            <div class="clear"> </div>
+                                        </li> 
+                                        <label class="checkbox"><span class="agre-check"><input type="checkbox" name="checkbox" checked=""></span><span class="agre-box">Please amine change it to something usefull or fuck off !</span></label>
+                                        <input type="submit" class="button" onclick="myFunction()" value="Create Account">
+                                            <div class="clear"> </div>
+                                    </ul>
+                                    <ul class="right-form col-6">
+                                        <div class="form-text sign-in">
+                                            <h2 style="margin-left:11px" >Sign-in</h2>  
+                                        </div>
+                                        <div>
+                                            <li>
+                                                <label for="username">Email</label>
+                                                <input type="email" name="email" required/>
+                                            </li>
+                                            <li> 
+                                                <label for="password">Password</label>
+                                                <input type="password"  name="Password" required/>
+                                            </li>
+                                            <h4><a href="" class ="forget-link">I forgot my Password!</a></h4>
+                                                <input type="submit" class="button" onclick="myFunction()" value="Login" >
+                                        </div>
+                                    </ul>
+                        </div>
+                    </div>
+                </div> 
+                </div>
+
+                    </div> 
+                </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

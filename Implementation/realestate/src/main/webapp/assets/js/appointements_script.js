@@ -4,7 +4,7 @@ var xhr =new XMLHttpRequest();
 
 for(var i=0; i<appointements.length; i++){
 	appointements[i].addEventListener("change", function(){
-		
+		//192.168.43.239
 		xhr.open("POST","http://localhost:8080/show_appointements",true)
 		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
 		

@@ -92,6 +92,11 @@ public class UserService {
 	public List<User> getOperators(){
 		return userRepository.getOperators();
 	}
+
+	public void evictCache() {
+		
+	}
+
 	
 			
 }

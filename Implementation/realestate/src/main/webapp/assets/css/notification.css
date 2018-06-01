@@ -1,0 +1,9 @@
+.check>p{
+    color: #195;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.check>ul{
+    display: none;
+}

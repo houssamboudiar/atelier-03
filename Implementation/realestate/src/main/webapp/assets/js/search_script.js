@@ -24,6 +24,7 @@ search_btn.addEventListener("click", function(){
 	   			"<p>price: "+ _lodgs[i].price +"</p>" +
 	   			"<p>state: "+ _lodgs[i].state +"</p>" +
 	   			"<p>locale: "+ _lodgs[i].locale +"</p>" +
+	   			"<p>type: "+ _lodgs[i].type +"</p>" +
 	   			"</div><a href='/reserve?id="+_lodgs[i].id+"' class='reserve' >reserve</a><br><div><p style='text-decoration: underline'>Reviews</p><div>"
 	   			//192.168.43.239
 	   			xhr1.open("POST","http://localhost:8080/get_reviews",false);

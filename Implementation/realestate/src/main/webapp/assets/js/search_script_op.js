@@ -7,7 +7,7 @@ var result
 search_btn.addEventListener("click", function(){
 	
 	result = ""
-	xhr.open("POST","http://192.168.43.239:8080/search",true);
+	xhr.open("POST","http://localhost:8080/search",true);
 	xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	xhr.send("state=" + search_bar.value);
 	
@@ -22,6 +22,7 @@ search_btn.addEventListener("click", function(){
 	   			"<p>price: "+ _lodgs[i].price +"</p>" +
 	   			"<p>state: "+ _lodgs[i].state +"</p>" +
 	   			"<p>locale: "+ _lodgs[i].locale +"</p>" +
+	   			"<p>type: "+ _lodgs[i].type +"</p>" +
 	   			"</div><a href='/reserve_op?id="+_lodgs[i].id+"' class='reserve'>reserve</a>" 	
 		   }
 		   	   

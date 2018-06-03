@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Realestate | Admin</title>
+		
+		<link rel="stylesheet" th:href="@{ /css/dashboard.css }">
+		<link rel="shortcut icon" th:href="@{ /images/logo.svg }">
+	</head>
+	<body>
+		<div class="wrapper">
+		<header>
+			<nav class="horizontal_nav">
+				<div class="toggle_menu">
+					<span class="fa fa-reorder"></span>
+				</div>
+				
+				<div class="profile_infos">
+					
+					<img class="profile_picture" th:src="@{ '/images/admin/' + ${admin.profile_pic} }" />
+					
+					<p class="profile_name">
+						<span th:text="${ admin.name } +' '+ ${ admin.last_name }"></span>
+						<span class="gear fa fa-gear"></span>
+					</p>
+					
+					<div class="profile_dropdown_menu">
+						<div class="item">
+							<a th:href="'/admin_profile/'+${ admin.id }">
+								<span class="fa fa-user"></span>Profile
+							</a>
+						</div>
+						<div class="item">
+							<a href="/logout">
+								<span class="fa fa-sign-out"></span>Logout
+							</a>
+						</div>							
+					</div>
+				</div>
+
+			</nav>
+			
+			<nav class="vertical_nav">
+				<div class="nav">
+					<div class="logo">
+						<img th:src="@{ /images/logo.svg }"/>
+					</div>
+					
+					<div class="menu">
+						<ul>
+							<a href="/" class="" >
+								<li>
+									<span class="fa fa-pie-chart" title="Generals"></span>
+									<span class="name">Generals</span>
+								</li>
+							</a>
+							
+							<a href="/" class="" >
+								<li>
+									<span class="fa fa-users" title="Clients"></span>
+									<span class="name">Clients</span>
+								</li>
+							</a>
+							
+							<a href="/" class="" >
+								<li>
+									<span class="fa fa-user-secret" title="Agents"></span>
+									<span class="name">Agents</span>
+								</li>
+							</a>
+							
+							<a href="/" class="" >
+								<li>
+									<span class="fa fa-building" title="Lodgements"></span>
+									<span class="name">Lodgements</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+				</div>	
+		</header>
+		<section>
+		
+			<div class="main_section">
+				<div class="visites_section">
+					<div class="all">
+						<p class="title">Total Visites :</p>
+						<p class="statistic">number of visites: 
+						<span class="number nbr_all_visites "></span></p>
+					</div>
+					
+					<div class="client">
+						<p class="title">Client's Visites :</p>
+						<p class="statistic">number of visites: 
+							<span class="number nbr_client_visites "></span> 
+							<span class="percent">
+								<span class=" percent_client_visites "></span> %
+							</span>
+						</p>
+					</div>
+					
+					<div class="agent">
+						<p class="title">Agent's Visites :</p>
+						<p class="statistic">number of visites: 
+							<span class="number nbr_agent_visites "></span> 
+							<span class="percent" >
+								<span class="percent_agent_visites"></span> %
+							</span>
+						</p>
+					</div>
+					
+					<div class="client">
+						<p class="title">Operator's Visites :</p>
+						<p class="statistic">number of visites: 
+							<span class="number nbr_operator_visites "></span> 
+							
+							<span class="percent" >
+								<span class=" percent_operator_visites "></span> %
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="visitors_nbr_chart">
+				<div id="visitors_nbr" class="visitors_nbr" style="height: 350px; "></div>
+			</div>
+					
+		</section>
+
+		</div>
+		<script type="text/javascript" th:src="@{ /js/dashboard.js }"></script>
+		<script type="text/javascript" th:src="@{ /js/canvasjs.js }"></script>
+		<script type="text/javascript" th:src="@{ /js/statistic.js }"></script>
+	</body>
+</html>

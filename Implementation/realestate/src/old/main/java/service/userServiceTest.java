@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -16,6 +17,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.repository.query.Param;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.realestate.RealestateApplication;
@@ -101,9 +103,21 @@ public class userServiceTest {
 			user.setPhone("0606040550");
 			user.setAddress("alger");
 			user.setGender("Male");
+			
+			public int client_subscribe(@Param("id")int id,
+					 @Param("email") String email,
+					 @Param("gender") String gender,
+					 @Param("birthdate") Date birthdate, 
+					 @Param("blocked") int blocked, 
+					 @Param("name") String name, 
+					 @Param("password") String password, 
+					 @Param("last_name") String lastname, 
+					 @Param("profile_pic") String profile_pic, 
+					 @Param("phone") String phone, 
+					 @Param("username") String username);
 				
-			UserRepository mock = org.mockito.Mockito.mock(UserRepository.class);
-		    Mockito.when(mock.save(user)).thenReturn(user);
+			ClientRepository mock = org.mockito.Mockito.mock(ClientRepository.class);
+		    Mockito.when(mock.client_subscribe()).thenReturn(Client);
 		    assertThat(userRepository.getUserByEmailAndPassword("ami@gmail.com", "123456789").getUsername()).isEqualTo(user.getUsername());
 		}
 	    //should be false , adding a user already exists on our database
